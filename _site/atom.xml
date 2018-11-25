@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+    <title type="text" xml:lang="en">Avinash Website/Blog</title>
+    <link type="application/atom+xml" rel="self" href="http://localhost:3000/atom.xml"/>
+  
+  <link href="http://localhost:3000/"/>
+  <id>http://localhost:3000/</id>
+  <updated>2018-11-25T13:01:30Z</updated>
+  <author>
+    <name>Avinash Nayak</name>
+    <email>avinash8nayak@gmail.com</email>
+  </author>
+  <rights type="text">Copyright © 2018 Avinash Nayak. Avinash Nayak.</rights>
+  
+  <entry>
+  <title type="text">Thanksgiving</title>
+  <link rel="alternate" type="text/html" href="http://localhost:3000/post2.html" />
+  <id>http://localhost:3000/post2</id>
+  <published>2018-11-25T00:00:00Z</published>
+  <updated>2018-11-25T00:00:00Z</updated>
+  <content type="html"><![CDATA[ <p>As my first official post, this piece is not topically concentrated, with more breadth than
+depth. Unlike what I intend my future posts to be like, it doesn’t have much analysis, and
+certainly doesn’t have a single thesis. However, a more general post seems reasonable as my first one while I figure 
+out what I like writing about and exploring in terms of topics. Split into the categories of Tech
+and Books, here are some things I’m thankful for this year, and a 
+brief description for why I’m thankful for them. These all either came into existence
+or my personal life this year.</p>
+
+<p>Before I split categorically, above all, I’m thankful for the family, friends,
+and good health this year that I’m fortunate enough to have around me. Not everyone 
+has this fortune, so it is good to give it the gratitude it deserves.</p>
+
+<p>Now, breaking into the aforementioned categories:</p>
+
+<h2 id="heading1">TECH</h2>
+<h3 id="heading2"><a href="https://www.headspace.com/" target="_blank">Headspace</a></h3>
+
+<p>I’m no Dalai Lama (or <a href="https://www.cnbc.com/2018/03/16/bridgewater-associates-ray-dalio-meditation-is-key-to-my-success.html" target="_blank"> Ray Dalio</a> for that matter), but this app definitely serves as a good starting platform for meditation. It belongs to the English-American online healthcare company of the same name, and is built on a freemium subscription service model. The app lets new users start wiih a “Basics” series of 10 sessions, each with increasing expectations. One of the best lessons I absorbed was to think of your mind as analogous to a mid-summer day sky, with clouds being the thoughts that pass by. During meditation, it is expected to have thoughts pass through the mind, but optimal to see them in passing rather than to try and travel with them.</p>
+
+<h3 id="heading2"><a href="https://art19.com/shows/pivot-with-kara-swisher-and-scott-galloway" target="_blank">Pivot</a></h3>
+<p>A rather recent discovery, but this is a fantastic podcast to listen to, with 
+<a href="https://en.wikipedia.org/wiki/Kara_Swisher" target="_blank"> Kara Swisher</a> and 
+<a href="https://en.wikipedia.org/wiki/Scott_Galloway_(professor)" target="_blank">Scott Galloway</a>. As much as I appreciate the tech industry, it needs to be kept accountable, and Kara and Scott do a great job of discussing the wins and losses in the industry. Sometimes, they can be quite harsh on tech companies, but overall, a good weekly listen whether you work in tech or not.</p>
+
+<h3 id="heading2"><a href="https://www.headspace.com/" target="_blank">Wrists Matter</a></h3>
+<p>These days, more than half of jobs require technology skills to operate a computer, and that number is expected to rise to over 75% in the next
+5 years. Hence, the need for healthy typing and computer usage is critical. Before 2017, I was never very careful with my ergonomics of using my laptop, often bending and contorting my wrists and forearms to use it on a high table or on my bed. However, during 2017, pain and tingling escalated for me, and I felt the need to seek out a solution. In addition to stretching exercises that I received from a physical therapist, I was able to get two ergonomic keyboards (and two mouses) this year (one for home and one for work), which have significantly reduced pain in my wrists from typing and using the mouse. Even though these cost anywhere from $200-500, I recommend making the invesment in an ergonomic keyboard, mouse, office chair, and even medical assessment if you feel pain in your forearms hampering you from productivity at your work (googling “ergonomic keyboard” is sufficient to find some useful options). Computer usage isn’t decreasing any time soon.</p>
+
+<!--
+<h2 id="heading1">PEOPLE (outside of family/friends)</h2>
+<h3 id="heading2"><a href = "https://en.wikipedia.org/wiki/Hasan_Minhaj" target="_blank">Hasan Minhaj</a></h3>
+The guy has been bulldozing the American political comedy landscape over the past few years. A correspondent on The Daily Show since 2014,
+he's now had his own Netflix special (Homecoming King), a speech at the WHCD, and now his show Patriot Act on Netflix. An Indian American Muslim millenial, his demographic background has presented him with countless challenges growing up in America, but his uncanny ability to be 
+both self-deprecating and cleverly critical of U.S. institutions in his comedy has gained him much appraise and success. He also captures
+the South Asian immigrant experience beautifully, as many South Asian second generation immigrants will probably tell you.
+
+
+<h3 id="heading2"><a href = "https://en.wikipedia.org/wiki/Roger_Federer" target="_blank">Roger Federer</a></h3>
+37 y/o? What? And you're still playing tennis? And you won the Australian Open this year to make it to 20 grand slams?
+Keep being an inspiration to millions around the world. And as much as I respect Nadal and Djokovic, do us all a favor and stay ahead
+of them in your grand slam count.
+
+<h3 id="heading2">Kendrick Lamar, Childish Gambino, Cardi B, too many more</h3>
+And many others.
+-->
+
+<h2 id="heading1">BOOKS</h2>
+<h3 id="heading2"><a href="https://www.amazon.com/Predictably-Irrational-Revised-Expanded-Decisions/dp/0061353248" target="_blank">Predictably Irrational</a></h3>
+<p>A 2008 book by current Duke and ex-MIT behavioral economics professor Dan Ariely. It refutes standard theories in classical economics which state that humans are rational, but it goes one step further to demonstrate how humans are irrational in systematized patterns that can be modeled into a group of psychological phenomena, i.e. predictably irrational. The book makes heavy use of logical examples and case studies,
+which are necessary to supporting the hypotheses. Furthermore, Professor Ariely underwent a very painful circumstance in his late teens that
+inspired him to think the way that he currently does, so it’s interesting to see how that plays out in his analysis.</p>
+
+<h3 id="heading2"><a href="https://www.amazon.com/Hillbilly-Elegy-Memoir-Family-Culture/dp/0062300547" target="_blank">Hillbilly Elegy</a></h3>
+<p>This book, written by J.D. Vance, is a vivid memoir of present-day life in the <a href="https://www.wikiwand.com/en/Rust_Belt">Rust Belt</a>.
+The novel is fairly conservative leaning in nature, but it allows the reader to empathize with people in the Central and Southern parts of the United States. Regardless of your political and cultural affiliations, this book provides a lens by which to see the ideology of much of the
+population that voted for Trump in the 2016 election. Reading it proves that we have deep cultural divides in our country that we need to heal along with healing our racial and demographic ones. A good follow-up to this book is “<a href="https://www.amazon.com/Between-World-Me-Ta-Nehisi-Coates/dp/0451482212" target="_blank">Between the World and Me</a>” by Ta-Nehisi Coates.</p>
+
+<h3 id="heading2"><a href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095" target="_blank">Sapiens</a></h3>
+<p>Yuval Harari, an Israeli philosophical historian and practicing vegan, writes about the transformation of humanity by dividing up chronological portions of our history into revolutions. The book serves to challenge the common viewpoint that happiness is directly correlated with societal progress. It can add perspective to how you view the purpose and sources of happiness and contentment in your life.</p>
+
+<!--
+<h2 id="heading1">EVENTS</h2>
+<h3 id="heading2">Graduation</h3>
+Mixed feelings about Princeton. While I am grateful for my time there, I don't miss the institution/academics nearly as much as the people. After college, it's harder to be lackadaisical about preserving the strength of your social circles. If your friends are spread between 4-5 cities, you can't just bang on their door one morning, wake them up, and go out for brunch. Being spread out from college friends makes you more appreciative of your past experiences with them. It keeps you grounded in that it makes you not take your social experiences for granted, and forces you to timebox periods when you can catch up with the people you care about.
+
+With regards to the graduation event itself, hearing Senator Cory Booker as our graduation speaker was wonderful. One of the most emotionally gripping public speakers in the world.
+
+<h3 id="heading2">Meeting Cornel West</h3>
+When my friend and I had gone to pick up lunch at Mamoun's, a local Meditarranean restaurant in Princeton, we had the opportunity to meet Cornel West (he was eating with his granddaughter). An extremely gregarious man with no superiority complex, he even offered to take a picture with us.
+
+<h3 id="heading2">Visiting Scandinavia</h3>
+Iceland, Norway, Sweden, Denmark, The Netherlands. Five of the most aesthetically beautiful countries in the world. Lots of greenery, beautiful glaciers (which are melting way too fast for comfort), ample urban life in the capital cities, and kind and helpful people.
+-->
+ ]]></content>
+</entry>
+
+
+  <entry>
+  <title type="text">First Blog post</title>
+  <link rel="alternate" type="text/html" href="http://localhost:3000/post1.html" />
+  <id>http://localhost:3000/post1</id>
+  <published>2018-11-24T00:00:00Z</published>
+  <updated>2018-11-24T00:00:00Z</updated>
+  <content type="html"><![CDATA[ <p>Trying out a new blog post.</p>
+ ]]></content>
+</entry>
+
+
+
+</feed>
