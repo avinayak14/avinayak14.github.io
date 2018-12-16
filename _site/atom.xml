@@ -6,13 +6,31 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-11-25T13:50:21Z</updated>
+  <updated>2018-12-16T14:24:11Z</updated>
   <author>
     <name>Avinash Nayak</name>
     <email>avinash8nayak@gmail.com</email>
   </author>
   <rights type="text">Copyright © 2018 Avinash Nayak. Avinash Nayak.</rights>
   
+  <entry>
+  <title type="text">Revenue is the New Growth</title>
+  <link rel="alternate" type="text/html" href="http://localhost:3000/post3.html" />
+  <id>http://localhost:3000/post3</id>
+  <published>2018-12-15T00:00:00Z</published>
+  <updated>2018-12-15T00:00:00Z</updated>
+  <content type="html"><![CDATA[ <p>Within the last year, and specifically within the last few months, multiple large technology companies have been plagued by scandals, as our 24-hour news cycle has been keen on informing us. From the mirage of Facebook’s scandals regarding violation of user privacy and concealment of information regarding Russian meddling in the U.S. elections, to Google’s recent <a href="https://thehill.com/policy/technology/420838-google-ceo-responds-to-steve-king-concerns-about-granddaughters-iphone" target="_blank"> joke of a hearing</a>, tech companies and their executives have slowly come under more of a spotlight regarding their endeavors. Market value has been yet another reflection of public sentiment, where Facebook’s 50-day SMA stock value has dipped by nearly 30% in the last 5 months and Amazon’s and Nvidia’s have dropped 15% and 35% respectively <a href="https://www.nasdaq.com/symbol/amzn/stock-chart?&amp;intraday=off&amp;timeframe=1y&amp;splits=off&amp;movingaverage=50day&amp;lowerstudy=volume&amp;comparison=off">since October</a>. However, one company has managed to hold its fort steady, with it’s 50-day SMA only dropping a few percentage points from it’s historical maximum, which was itself only obtained in October. In this post, we’ll see why a certain characteristic of this company is going to let it dominate without fear in the next 10 years.</p>
+
+<p>During the years under Steve Ballmer, Microsoft had some failures, one of the biggest ones arguably being the lack of initiative on <a href="https://www.youtube.com/watch?v=1mrKy1ixKaQ">mobile</a>. However, within the last 4 years under Satya Nadella, the company has taken an extremely positive turn. What was a $4.4 billion commercial cloud revenue annual-run rate in 2014 increased to over $23 billion in 2018. Cash dividends per share of stock has nearly doubled in the last five years, going from $0.92 to $1.68 recently. Furthermore, the company has poured human capital into it’s research arm, MSR, fueled for big-bet projects in AI and quantum computing. What will continue to propel the company forward in growth and influence, however, is its diverse palette of revenue streams.</p>
+
+<p>While Facebook and Google make 97% and 88% of their revenue from advertising respectively, they currently dominate between 60% and 70% of U.S. advertising market share, leaving little room for growth in that vertical. Given the track record of the two companies within the last decade, it seems that they will come up with ways to circumvent this limitation, but there will be hard problems to solve, both on the technical and business side (for example, coming up with increasingly creative monetizing strategies). Amazon and Apple both have over 60% of their annual revenue coming from retail product sales and iPhones, respectively, and with the mixed perceptions of the iPhone X series this year, it is easy to see why Apple may be worrying about sustainability of YoY sales based on their ever-increasing price point. Regarding Microsoft, however, no category of revenue has above a 30% dominion of annual revenue. Sources include their suite of hardware products, such as the Surface, Windows machines, and the Xbox, as well as their Office 365 subscription revenue model, ads, Windows Server, and Azure. Unlike the cases of the other technology mega-corps, the possible antiquity or decay of a single revenue stream will not have a severely negative effect on the company’s financial sustainability at large.</p>
+
+<p>Revenue may seem to be a shallow metric at times when evaluating a tech company. “Isn’t product, user experience, and growth more important?”, one might ask. Many startups and unicorns rack up large amounts of debt, relying purely on equity funding in their beginnings. While it may not be as important for startups, revenue is enormously important for tech giants, especially as user engagement starts plateauing, in-house hardware becomes more desirable, and competitive labor markets require people with highly demanded skill sets to be rewarded without restraint. Access to additional GPUs for training machine learning models requires capital. Offering highly competitive salaries to lure PhD’s away from academia and a heavily competitive offer from Uber ATG requires capital. Constructing hardware in-house for projects like Oculus, Hololens, and self-driving cars at scale, with the aim of having them exist at an exceedingly global scale within the next half-century, requires capital. And in the fight for increasingly hardware based innovation, having a diversified revenue stream can only help.</p>
+
+ ]]></content>
+</entry>
+
+
   <entry>
   <title type="text">Thanksgiving</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/post2.html" />
@@ -36,7 +54,7 @@ has this fortune, so it is good to give it the gratitude it deserves.</p>
 <h2 id="heading1">TECH</h2>
 <h3 id="heading2"><a href="https://www.headspace.com/" target="_blank">Headspace</a></h3>
 
-<p>I’m no Dalai Lama (or <a href="https://www.cnbc.com/2018/03/16/bridgewater-associates-ray-dalio-meditation-is-key-to-my-success.html" target="_blank"> Ray Dalio</a> for that matter), but this app definitely serves as a good starting platform for meditation. It belongs to the English-American online healthcare company of the same name, and is built on a freemium subscription service model. The app lets new users start wiih a “Basics” series of 10 sessions, each with increasing expectations. One of the best lessons I absorbed was to think of your mind as analogous to a mid-summer day sky, with clouds being the thoughts that pass by. During meditation, it is expected to have thoughts pass through the mind, but optimal to see them in passing rather than to try and travel with them.</p>
+<p>I’m no Dalai Lama (or <a href="https://www.cnbc.com/2018/03/16/bridgewater-associates-ray-dalio-meditation-is-key-to-my-success.html" target="_blank"> Ray Dalio</a> for that matter), but this app definitely serves as a good starting platform for meditation. It belongs to the English-American online healthcare company of the same name, and is built on a freemium subscription service model. The app lets new users start with a “Basics” series of 10 sessions, each with increasing expectations. One of the best lessons I absorbed was to think of your mind as analogous to a mid-summer day sky, with clouds being the thoughts that pass by. During meditation, it is expected to have thoughts pass through the mind, but optimal to see them in passing rather than to try and travel with them.</p>
 
 <h3 id="heading2"><a href="https://art19.com/shows/pivot-with-kara-swisher-and-scott-galloway" target="_blank">Pivot</a></h3>
 <p>A rather recent discovery, but this is a fantastic podcast to listen to, with 
