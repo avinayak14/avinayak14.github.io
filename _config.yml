@@ -11,10 +11,10 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://avinashnayak14.github.io/
-baseurl: /
-title: Avi Website/Blog
-author: Avi Nayak
+url: https://avinashnayak14.github.io/
+baseurl: https://avinashnayak14.github.io/
+title: Avi Website & Blog
+author: Avi
 description: Personal blog/website
 avatar: profile.png
 email: avinash8nayak@gmail.com
