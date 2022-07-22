@@ -11,16 +11,16 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: https://avinashnayak14.github.io/
-baseurl: https://avinashnayak14.github.io/
+url: https://avinayak14.github.io/
+baseurl: https://avinayak14.github.io/
 title: Avi Website & Blog
 author: Avi
 description: Personal blog/website
 avatar: profile.png
 email: avinash8nayak@gmail.com
-github: avinashnayak14 # username
+github: avinayak14 # username
 #twitter: username
-linkedin: avi-nayak-40387198
+linkedin: avi-n-40387198
 #stackoverflow: username   #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus
 #disqus: username
