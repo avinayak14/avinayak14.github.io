@@ -12,116 +12,165 @@
       <title>Projects</title>
 
 
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
-    crossorigin="anonymous">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --text-color: #333;
+      }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: var(--text-color);
+        background-color: #f8f9fa;
+      }
 
-	<!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="/static/css/syntax.css" />
+      .navbar {
+        background-color: var(--primary-color);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
 
-    <!-- Google Analytics -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      .navbar-brand {
+        color: white !important;
+      }
 
-  ga('create', 'UA-69391421-1', 'auto');
-  ga('send', 'pageview');
+      .nav-link {
+        color: white !important;
+        transition: color 0.3s ease;
+      }
 
-</script>
+      .nav-link:hover {
+        color: var(--secondary-color) !important;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-icon {
+        color: var(--secondary-color);
+        margin-right: 0.5rem;
+      }
+
+      .project-title {
+        color: var(--primary-color);
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        .project-card {
+          padding: 1.5rem;
+        }
+      }
+    </style>
   </head>
   <!-- Main Body-->
   <body>
   <!-- Wrap all page content here -->
   <div id="wrap">
     <!-- Navbar header -->
-    <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/"><i class="fa fa-home"></i></a>
-    </div>
-    <div id="navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/blog.html">BLOG</a></li>
-        <li><a href="/projects.html">PROJECTS</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <i class="fas fa-home"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-
-    <section id="projects">
-<div class="container">
-  <h3>Projects</h3>
-  <div class="panel panel-default">
-    <div class="panel-body">
-		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/avinayak14/Lucy" target="_blank">Lucy</a></strong>
-			- A voice enabled web browser that allows people with physical disabilities to
-			operate a computer and surf the web without the use of their hands.
-		</h5>
-		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/avinayak14/Princeton_IW" target="_blank">NLP Independent Research @ Princeton</a></strong>
-			- I conducted research in in Natural Language Processing under my advisor,
-			Dr. Christiane Fellbaum.
-		</h5>
-    	<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/avinayak14/DrQA_Research_Paper" target="_blank">DrQA Exploration</a></strong>
-			- My final project from Princeton's COS 495 class (Special Topics in Natural Language Processing).
-		</h5>
-		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/avinayak14/avinayak14.github.io" target="_blank">Personal Website/Blog</a></strong>
-			- A website/blog detailing my background, experiences, and posts with facts and opinions.
-		</h5>
-    <h5>
-			&nbsp;&nbsp;<strong><a href="https://medium.com/pinterest-engineering/understanding-product-attributes-for-shoppers-77268c746c87" target="_blank">Product Attributes</a></strong>
-			- A project on the importance of product attributes for shoppers.
-		</h5>
-    <h5>
-			&nbsp;&nbsp;<strong><a href="https://www.microsoft.com/en-us/research/blog/intelligent-monitoring-towards-ai-assisted-monitoring-for-cloud-services/" target="_blank">Intelligent Monitoring</a></strong>
-			- A project on the importance of intelligent monitoring for cloud services.
-		</h5>
-
-    </div>
-  </div>
-</div>
-</section>
-
-
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="project-card">
+              <h4 class="d-flex align-items-center mb-3">
+                <i class="project-icon fas fa-github"></i>
+                <a href="https://github.com/avinayak14/Lucy" target="_blank" class="project-title">Lucy</a>
+              </h4>
+              <p>A voice enabled web browser that allows people with physical disabilities to operate a computer and surf the web without the use of their hands.</p>
+            </div>
+            <div class="project-card">
+              <h4 class="d-flex align-items-center mb-3">
+                <i class="project-icon fas fa-github"></i>
+                <a href="https://github.com/avinayak14/Princeton_IW" target="_blank" class="project-title">NLP Independent Research @ Princeton</a>
+              </h4>
+              <p>I conducted research in in Natural Language Processing under my advisor, Dr. Christiane Fellbaum.</p>
+            </div>
+            <div class="project-card">
+              <h4 class="d-flex align-items-center mb-3">
+                <i class="project-icon fas fa-github"></i>
+                <a href="https://github.com/avinayak14/DrQA_Research_Paper" target="_blank" class="project-title">DrQA Exploration</a>
+              </h4>
+              <p>My final project from Princeton's COS 495 class (Special Topics in Natural Language Processing).</p>
+            </div>
+            <div class="project-card">
+              <h4 class="d-flex align-items-center mb-3">
+                <i class="project-icon fas fa-github"></i>
+                <a href="https://github.com/avinayak14/avinayak14.github.io" target="_blank" class="project-title">Personal Website/Blog</a>
+              </h4>
+              <p>A website/blog detailing my background, experiences, and posts with facts and opinions.</p>
+            </div>
+            <div class="project-card">
+              <h4 class="d-flex align-items-center mb-3">
+                <i class="project-icon fas fa-external-link-alt"></i>
+                <a href="https://medium.com/pinterest-engineering/understanding-product-attributes-for-shoppers-77268c746c87" target="_blank" class="project-title">Product Attributes</a>
+              </h4>
+              <p>A project on the importance of product attributes for shoppers.</p>
+            </div>
+            <div class="project-card">
+              <h4 class="d-flex align-items-center mb-3">
+                <i class="project-icon fas fa-external-link-alt"></i>
+                <a href="https://www.microsoft.com/en-us/research/blog/intelligent-monitoring-towards-ai-assisted-monitoring-for-cloud-services/" target="_blank" class="project-title">Intelligent Monitoring</a>
+              </h4>
+              <p>A project on the importance of intelligent monitoring for cloud services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </div>
   <!-- Footer -->
   <footer>
     <div id="footer">
         <div class="container">
-            <p class="text-muted">© Avinash Nayak. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
-            <a href="http://www.github.com/jekyller/sustain">sustain</a> with ♥</p>
+            <p class="text-muted"> Avinash Nayak. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
+            <a href="http://www.github.com/jekyller/sustain">sustain</a> with </p>
         </div>
     </div>
 </footer>
 <div class="footer"></div>
 
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
-    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="/static/js/docs.min.js"></script>
     <script src="/static/js/main.js"></script>
