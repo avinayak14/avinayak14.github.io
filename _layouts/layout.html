@@ -139,10 +139,45 @@
         }
       });
 
-      // Add loading animation
-      window.addEventListener('load', () => {
-        document.body.classList.add('loaded');
-      });
+              // Add loading animation
+        window.addEventListener('load', () => {
+          document.body.classList.add('loaded');
+        });
+
+        // Fun interactive animations for the home page
+        const aboutSection = document.querySelector('#about');
+        if (aboutSection) {
+          // Add sparkle effect on mouse move
+          aboutSection.addEventListener('mousemove', (e) => {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.left = e.pageX + 'px';
+            sparkle.style.top = e.pageY + 'px';
+            aboutSection.appendChild(sparkle);
+            
+            setTimeout(() => {
+              sparkle.remove();
+            }, 1000);
+          });
+
+          // Add bounce effect to the name when clicked
+          const nameElement = document.querySelector('.typewriter');
+          if (nameElement) {
+            nameElement.addEventListener('click', () => {
+              nameElement.style.animation = 'none';
+              nameElement.offsetHeight; // Trigger reflow
+              nameElement.style.animation = 'bounceIn 0.6s ease-out';
+            });
+          }
+
+          // Add fun hover effect to the emoji
+          const emojiElement = document.querySelector('.emoji-wave');
+          if (emojiElement) {
+            emojiElement.addEventListener('mouseenter', () => {
+              emojiElement.style.animation = 'wave 0.5s ease-in-out';
+            });
+          }
+        }
     </script>
   </body>
 </html>
