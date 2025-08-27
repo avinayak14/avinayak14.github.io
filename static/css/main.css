@@ -321,6 +321,11 @@ body {
   transform-origin: 70% 70%;
 }
 
+/* Click bounce animation for name without affecting text */
+.clicked-bounce {
+  animation: bounceIn 0.6s ease-out;
+}
+
 @keyframes wave {
   0%, 100% {
     transform: rotate(0deg);

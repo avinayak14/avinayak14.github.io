@@ -160,13 +160,20 @@
             }, 1000);
           });
 
-          // Add bounce effect to the name when clicked
+          // Add bounce effect to the name when clicked without clearing text
           const nameElement = document.querySelector('.typewriter');
           if (nameElement) {
             nameElement.addEventListener('click', () => {
-              nameElement.style.animation = 'none';
-              nameElement.offsetHeight; // Trigger reflow
-              nameElement.style.animation = 'bounceIn 0.6s ease-out';
+              // Ensure the text remains visible and caret is hidden
+              nameElement.style.maxWidth = '100%';
+              nameElement.style.borderRight = '0';
+
+              // Retrigger a dedicated bounce class without overriding existing animations
+              nameElement.classList.remove('clicked-bounce');
+              // Force reflow to restart animation
+              // eslint-disable-next-line no-unused-expressions
+              nameElement.offsetWidth;
+              nameElement.classList.add('clicked-bounce');
             });
           }
 
