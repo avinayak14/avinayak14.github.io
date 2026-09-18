@@ -11,20 +11,22 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: https://avinayak14.github.io/
-baseurl: https://avinayak14.github.io/
-title: Avi Website & Blog
+url: https://avinayak14.github.io
+baseurl: ""
+title: Avi Nayak | Engineering, Product & Strategy
 author: Avi
-description: Personal blog/website
+description: Engineering, product management, and strategy leader with over a decade of experience across Microsoft, Meta, and Pinterest, plus angel investing.
 avatar: profile.png
 email: avinash8nayak@gmail.com
-github: avinayak14 # username
+# github: username   # intentionally left out to keep public repositories unlinked
 twitter: avi2040
-linkedin: avi-n-40387198
+linkedin: avi-nayak-40387198
 #stackoverflow: username   #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus
 #disqus: username
-google_analytics: UA-69391421-1
+# Google Analytics 4 measurement ID (format: G-XXXXXXX).
+# The legacy Universal Analytics (UA-) property was retired by Google in July 2023.
+google_analytics:
 
 
 # needed for travis-ci build
