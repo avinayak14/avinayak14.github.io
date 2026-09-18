@@ -1,0 +1,12 @@
+_site/
+.DS_Store
+.bundle/
+*.un~
+.jekyll-cache/
+
+# Unused/legacy image artifacts (kept locally, not published)
+static/img/headshot.png
+static/img/profile.jpg
+static/img/profile_old*.png
+static/img/profile_old*.jpeg
+assets/images/screen*.png
