@@ -10,3 +10,5 @@ static/img/profile.jpg
 static/img/profile_old*.png
 static/img/profile_old*.jpeg
 assets/images/screen*.png
+# Raw trip photo exports (GPS-tagged originals, keep local)
+*_photos/
