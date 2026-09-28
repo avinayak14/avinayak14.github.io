@@ -11,8 +11,10 @@
 
     {% if page.title %}
       <title>{{ page.title }} | {{ site.title }}</title>
+      <meta property="og:title" content="{{ page.title | escape }} | Avi N">
     {% else %}
       <title>{{ site.title }}</title>
+      <meta property="og:title" content="Avi Nayak">
     {% endif %}
 
     <!-- Bootstrap -->
