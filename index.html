@@ -2,27 +2,33 @@
 layout: home
 ---
 
-<section id="about">
-  <div class="container">
-    <div class="avatar">
-      <img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Avi's Profile Picture">
-    </div>
-    <h3 class="bounce-in">Hi! I'm <strong class="typewriter">{{ site.author }}</strong> <span class="emoji-wave">👋</span></h3>
-    <h3 class="stagger-fade">I've spent over a decade working in product management, engineering, and strategy across several enterprises. My passions & interests include angel investing, poker, economics/finance, history, music (guitar & vocals), and health/fitness!</h3>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1>Hi! I'm <span class="accent">{{ site.author }}</span> <span class="wave" aria-hidden="true">👋</span></h1>
+      <p class="hero-lead">I've spent over a decade working in product management, engineering, and strategy across several enterprises. My passions & interests include angel investing, poker, economics/finance, history, music (guitar & vocals), and health/fitness!</p>
 
-    {% include social.html %}
+      {% include social.html %}
+    </div>
+    <div class="portrait">
+      <img src="{{ '/static/img/' | append: site.avatar | relative_url }}" alt="Avi's Profile Picture" width="360" height="360">
+    </div>
   </div>
 </section>
 
-<section id="cta">
+<section class="section-tight">
   <div class="container">
-    <h3 class="text-gradient">Let's work together</h3>
-    <p>Open to engineering and product leadership, advising, and angel investing. Reach out anytime.</p>
-    <div class="cta-buttons">
-      <a href="{{ site.baseurl }}vitae.html" class="btn btn-primary"><i class="fa fa-briefcase"></i>Experience</a>
-      <a href="{{ site.baseurl }}projects.html" class="btn btn-outline-primary"><i class="fa fa-rocket"></i>Projects</a>
-      <a href="{{ site.baseurl }}blog.html" class="btn btn-outline-primary"><i class="fa fa-pencil"></i>Blog</a>
-      <a href="mailto:{{ site.email }}" class="btn btn-outline-primary"><i class="fa fa-envelope"></i>Get in touch</a>
+    <div class="cta">
+      <div>
+        <h2>Let's work together</h2>
+        <p>Open to engineering and product leadership, advising, and angel investing. Reach out anytime.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="{{ '/vitae.html' | relative_url }}" class="btn btn-light">Experience</a>
+        <a href="{{ '/projects.html' | relative_url }}" class="btn btn-outline-light">Projects</a>
+        <a href="{{ '/blog.html' | relative_url }}" class="btn btn-outline-light">Blog</a>
+        <a href="mailto:{{ site.email }}" class="btn btn-outline-light">Get in touch</a>
+      </div>
     </div>
   </div>
 </section>

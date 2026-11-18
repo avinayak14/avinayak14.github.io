@@ -5,24 +5,26 @@ title: Blog
 
 <div class="blog-archive">
   <div class="container">
-    <h3 class="text-gradient">Blog Archive</h3>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        {% for post in site.posts %}
-          <div class="row shadow-hover">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-              <h5>
-                <i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
-              </h5>
-            </div>
-            <div class="col-sm-8 col-md-8 col-lg-8">
-              <h5>
-                <strong><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></strong>
-              </h5>
-            </div>
+    <header class="page-head">
+      <p class="eyebrow">Blog</p>
+      <h1>Blog Archive</h1>
+    </header>
+
+    <div class="post-list">
+      {% for post in site.posts %}
+        {% assign words = post.content | strip_html | number_of_words %}
+        {% assign minutes = words | divided_by: 200 | plus: 1 %}
+        <article class="post-card">
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %e, %Y" }}</time>
+            <span aria-hidden="true">&middot;</span>
+            <span>{{ minutes }} min read</span>
           </div>
-        {% endfor %}
-      </div>
+          <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          {% assign excerpt = post.content | strip_html | normalize_whitespace | truncatewords: 32 %}
+          {% if excerpt != "" %}<p class="post-desc">{{ excerpt }}</p>{% endif %}
+        </article>
+      {% endfor %}
     </div>
   </div>
 </div>

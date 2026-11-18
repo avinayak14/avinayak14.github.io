@@ -2,55 +2,44 @@
 layout: layout
 ---
 
-<div class="container">
-  <div class="blog-post">
-    <div class="post-header">
-      <h1 class="post-title text-gradient">{{ page.title }}</h1>
-      <div class="post-meta">
-        <span class="post-date">
-          <i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
+{% assign words = content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: 200 | plus: 1 %}
+<article class="container article">
+  <header class="article-head">
+    <a class="back-link" href="{{ '/blog.html' | relative_url }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Blog
+    </a>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %e, %Y" }}</time>
+      <span aria-hidden="true">&middot;</span>
+      <span>{{ minutes }} min read</span>
+      {% if page.tags %}
+        <span class="post-tags">
+          {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
         </span>
-        {% if page.tags %}
-          <span class="post-tags">
-            <i class="fa fa-tags"></i>
-            {% for tag in page.tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </span>
-        {% endif %}
-      </div>
+      {% endif %}
     </div>
+  </header>
+
+  <div class="prose">
+    {{ content }}
   </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <div class="blogpost">
-        {{ content }}
-        
-        <hr class="post-divider">
-        
-        {% if site.related_posts.size > 0 %}
-          <div class="related-posts">
-            <h4>Related Posts</h4>
-            <div class="row">
-              {% for post in site.related_posts limit:3 %}
-                <div class="col-md-4">
-                  <div class="related-post-card shadow-hover">
-                    <div class="related-post-date">
-                      <i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
-                    </div>
-                    <h5>
-                      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    </h5>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        {% endif %}
+
+  {% if site.related_posts.size > 0 %}
+    <aside class="related-posts">
+      <h2>Related Posts</h2>
+      <div class="related-grid">
+        {% for post in site.related_posts limit:3 %}
+          <a class="related-card" href="{{ post.url | relative_url }}">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %e, %Y" }}</time>
+            <span class="related-title">{{ post.title }}</span>
+          </a>
+        {% endfor %}
       </div>
-    </div>
-  </div>
-  
+    </aside>
+  {% endif %}
+
   {% include disqus.html %}
-</div>
+</article>

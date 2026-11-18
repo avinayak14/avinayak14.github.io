@@ -5,20 +5,12 @@ title: Page Not Found
 
 <div class="page-not-found">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h1 class="text-gradient">404</h1>
-        <h2>Oops! Page Not Found</h2>
-        <p>The page you're looking for doesn't exist or has been moved.</p>
-        <div class="mt-4">
-          <a href="{{ site.baseurl }}" class="btn btn-primary btn-lg">
-            <i class="fa fa-home"></i> Go Home
-          </a>
-          <a href="{{ site.baseurl }}blog.html" class="btn btn-outline-primary btn-lg">
-            <i class="fa fa-pencil"></i> Read Blog
-          </a>
-        </div>
-      </div>
+    <p class="big-404">404</p>
+    <h1>Oops! Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <div class="actions">
+      <a href="{{ '/' | relative_url }}" class="btn btn-primary">Go Home</a>
+      <a href="{{ '/blog.html' | relative_url }}" class="btn btn-ghost">Read Blog</a>
     </div>
   </div>
 </div>

@@ -1,17 +1,20 @@
 <div class="social">
-	<h4>
-    {% if site.email %}
-	  <a href="mailto:{{ site.email}}"><i class="fa fa-envelope"></i></a>
-    {% endif %}
-
-    {% if site.twitter %}
-	  <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
-    {% endif %}
-    {% if site.linkedin %}
-	  <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
-    {% endif %}
-    {% if site.stackoverflow %}
-	  <a href="https://stackoverflow.com/{{ site.stackoverflow }}"><i class="fa fa-stack-overflow"></i></a>
-    {% endif %}
-	</h4>
+  {% if site.email %}
+  <a class="icon-btn" href="mailto:{{ site.email }}" aria-label="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+  </a>
+  {% endif %}
+  {% if site.twitter %}
+  <a class="icon-btn" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 4.56a9.6 9.6 0 0 1-2.83.78 4.93 4.93 0 0 0 2.17-2.72 9.86 9.86 0 0 1-3.13 1.2 4.92 4.92 0 0 0-8.39 4.48A13.97 13.97 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.52 6.57 4.9 4.9 0 0 1-2.23-.62v.06a4.92 4.92 0 0 0 3.95 4.83 4.93 4.93 0 0 1-2.22.08 4.93 4.93 0 0 0 4.6 3.42A9.87 9.87 0 0 1 0 19.54a13.94 13.94 0 0 0 7.55 2.21c9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63A10 10 0 0 0 24 4.56z"/></svg>
+  </a>
+  {% endif %}
+  {% if site.linkedin %}
+  <a class="icon-btn" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+  </a>
+  {% endif %}
+  {% if site.stackoverflow %}
+  <a class="icon-btn" href="https://stackoverflow.com/{{ site.stackoverflow }}" target="_blank" rel="noopener" aria-label="Stack Overflow">SO</a>
+  {% endif %}
 </div>
