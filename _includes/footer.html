@@ -13,9 +13,9 @@
     </nav>
     <div class="footer-col">
       <p class="footer-heading">Elsewhere</p>
-      {% if site.linkedin %}<a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-      {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
-      {% if site.email %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
+      {% if site.linkedin %}<a class="social-link" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener"><span class="social-logo logo-linkedin">{% include icon.html name="linkedin" size=14 %}</span>LinkedIn</a>{% endif %}
+      {% if site.twitter %}<a class="social-link" href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener"><span class="social-logo logo-x">{% include icon.html name="x" size=13 %}</span>X (Twitter)</a>{% endif %}
+      {% if site.email %}<a class="social-link" href="mailto:{{ site.email }}"><span class="social-logo logo-mail">{% include icon.html name="mail" size=14 %}</span>Email</a>{% endif %}
     </div>
   </div>
   <div class="container footer-base">
